@@ -1,0 +1,72 @@
+.right {
+    width: 27%;
+    height: 93%;
+    margin: auto 0;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#texto-vacio {
+    width: 87%;
+    text-align: center;
+    cursor: default;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#texto-vacio h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(61, 57, 57);
+    font-family: Chalkboard, sans-serif;
+}
+
+#texto-vacio p {
+    color: rgb(122, 112, 112);
+    font-size: 15px;
+    font-family: "Heiti SC", serif;
+    padding: 14px 0;
+}
+
+#texto-vacio img {
+    width: 105%;
+    margin-top: 20px;
+}
+
+.texto {
+    margin-top: 30px;
+}
+
+/*
+Segunda capa
+ */
+
+#clipboard {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#clipboard p {
+    margin: 40px 120px 0 0;
+    font-size: 18px;
+    font-family: "Heiti SC", sans-serif;
+}
+
+#copiar {
+    background-color: #D8DFE8;
+    margin-top: 500px;
+    transition: all 100ms linear;
+    box-shadow: 0 3px 0 #969696;
+}
+
+#copiar:active {
+    box-shadow:0 0 0, inset 0 0 7px #8f8f8f;
+}

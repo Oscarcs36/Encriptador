@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador - Alura Challenge</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>
+        <img src="imagenes/logo.png" alt="">
+    </h1>
+</header>
+
+<main>
+    <div class="left">
+        <div class="top-text">
+            <input type="text" name="" id="texto" placeholder="Ingrese el texto aqui">
+        </div>
+
+        <div class="bot-buttom">
+            <p id="advertencia"><img src="imagenes/icono.png" alt="!">Solo letras minúsculas y sin acentos</p>
+            <div class="buttoms">
+                <input type="button" value="Encriptar" id="encriptar" class="boton-estilo" onclick="encriptar()">
+                <input type="button" value="Desencriptar" id="desencriptar" class="boton-estilo">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <div id="texto-vacio">
+            <img src="imagenes/Muñeco.png" alt="">
+            <div class="texto">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+        <div id="clipboard">
+            <p id="texto-copiar"></p>
+            <input type="button" value="Copiar" id="copiar" class="boton-estilo texto-copiar" onclick="copy_text('texto-copiar')">
+        </div>
+    </div>
+</main>
+<script src="test.js"></script>
+</body>
+</html>
