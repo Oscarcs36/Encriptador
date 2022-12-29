@@ -49,11 +49,10 @@
 
 #texto {
     border: none;
-    background: red;
+    background: transparent;
     font-size: 24px;
     margin-top: 120px;
-    width: 90%;
-    height: 70%;
+    resize: none;
 }
 
 #texto::placeholder {

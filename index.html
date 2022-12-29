@@ -16,14 +16,15 @@
 <main>
     <div class="left">
         <div class="top-text">
-            <input type="text" name="" id="texto" placeholder="Ingrese el texto aqui">
+            <textarea name="" id="texto" cols="56" rows="15" placeholder="Ingresa el texto aqui" onclick="this.select()"
+                      onkeypress="return (event.charCode >= 97 && event.charCode <= 122) || (event.charCode === 32) || (event.charCode ===164)"></textarea>
         </div>
 
         <div class="bot-buttom">
             <p id="advertencia"><img src="imagenes/icono.png" alt="!">Solo letras minúsculas y sin acentos</p>
             <div class="buttoms">
                 <input type="button" value="Encriptar" id="encriptar" class="boton-estilo" onclick="encriptar()">
-                <input type="button" value="Desencriptar" id="desencriptar" class="boton-estilo">
+                <input type="button" value="Desencriptar" id="desencriptar" class="boton-estilo" onclick="desencriptar()">
             </div>
         </div>
 
@@ -38,11 +39,11 @@
             </div>
         </div>
         <div id="clipboard">
-            <p id="texto-copiar"></p>
-            <input type="button" value="Copiar" id="copiar" class="boton-estilo texto-copiar" onclick="copy_text('texto-copiar')">
+            <div id="texto-copiar"></div>
+            <input type="button" value="Copiar" id="copiar" class="boton-estilo" onclick="copy_text('texto-copiar')">
         </div>
     </div>
 </main>
-<script src="test.js"></script>
+<script src="encriptacion.js"></script>
 </body>
 </html>
